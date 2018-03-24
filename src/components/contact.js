@@ -1,9 +1,58 @@
 import React , { Component } from 'react';
+import { Grid, Cell, List, ListItem, ListItemContent } from 'react-mdl';
 
 class Contact extends Component {
     render() {
         return(
-            <div><h1>Contact Page</h1></div>
+            <div className="contact-body">
+                <Grid className="contact-grid">
+                    <Cell col={6}>
+                        <h2>Andrey Duka</h2>
+                        <img src="https://cdn3.savepice.ru/uploads/2018/3/16/5fa65c8b17bf0f658dfca9bdf769aebe-full.png" 
+                        alt="avatar"
+                        />
+                        <p style={{ width: '75%', margin:'auto', paddingTop: '1em'}}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                            when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    </Cell>
+                    <Cell col={6}>
+                        <h2> Contact Me </h2>
+                        <hr/>
+                        <div className="contact-list">
+                            <List>
+                                <ListItem>
+                                    <ListItemContent style={{fontSize: '30px', fontFamily: 'Anton'}}>
+                                        <i className="fa fa-phone-square" aria-hidden="true" />
+                                            +38(066)826-46-80
+                                    </ListItemContent>
+                                </ListItem>
+
+                                <ListItem>
+                                    <ListItemContent style={{fontSize: '30px', fontFamily: 'Anton'}}>
+                                        <i className="fa fa-fax" aria-hidden="true" />
+                                            +38(066)826-46-80
+                                    </ListItemContent>
+                                </ListItem>
+
+                                <ListItem>
+                                    <ListItemContent style={{fontSize: '30px', fontFamily: 'Anton'}}>
+                                        <i className="fa fa-envelope" aria-hidden="true" />
+                                            andd1.duka@gmail.com
+                                    </ListItemContent>
+                                </ListItem>
+
+
+                                <ListItem>
+                                    <ListItemContent style={{fontSize: '30px', fontFamily: 'Anton'}}>
+                                        <i className="fa fa-skype" aria-hidden="true" />
+                                            andrey4ik.duka
+                                    </ListItemContent>
+                                </ListItem>
+
+                            </List>
+                        </div>  
+                    </Cell>
+                </Grid>
+            </div>
         )
     }
 }
