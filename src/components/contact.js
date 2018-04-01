@@ -28,13 +28,6 @@ class Contact extends Component {
 
                                 <ListItem>
                                     <ListItemContent style={{fontSize: '30px', fontFamily: 'Anton'}}>
-                                        <i className="fa fa-fax" aria-hidden="true" />
-                                            +38(066)826-46-80
-                                    </ListItemContent>
-                                </ListItem>
-
-                                <ListItem>
-                                    <ListItemContent style={{fontSize: '30px', fontFamily: 'Anton'}}>
                                         <i className="fa fa-envelope" aria-hidden="true" />
                                             andd1.duka@gmail.com
                                     </ListItemContent>

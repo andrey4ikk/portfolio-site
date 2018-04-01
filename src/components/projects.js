@@ -17,51 +17,73 @@ class Projects extends Component {
                 <div className="projects-grid">
                     
                     <Card shadow={5} style={{minWidth: '450', margin: '25px'}}>
-                    <CardTitle style={{color: '#fff', height: '200px', background: 
-                    'url(https://reactjs.org/logo-og.png) center / cover' }}>React Project #1</CardTitle>
-                    <CardText>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+                    <CardTitle style={{color: '', height: '200px', fontSize: '100px', background: 
+                    'url(http://i.piccy.info/i9/dc7c072d55f731fdd222b520faf31239/1522426331/102963/1233504/myWebsite.jpg) center / cover' }}></CardTitle>
+                    <CardText >
+                        Used: Javascript, ReactJs,
+                        React-MDL, HTML/CSS
                     </CardText>
-                    <CardActions border>
-                        <Button colored>Github</Button> 
-                        <Button colored>Live Demo</Button> 
+                    <CardActions border style={{textAlign: 'center'}}>
+                        <Button href="https://github.com/andrey4ikk/portfolio-site" rel="noopener noreferrer" target="_blank" colored >Github</Button> 
+                        <Button href="https://andrey-duka.herokuapp.com/" rel="noopener noreferrer" target="_blank" colored>Live Demo</Button> 
                     </CardActions>
                 </Card>
 
                     <Card shadow={5} style={{minWidth: '450', margin: '25px'}}>
-                    <CardTitle style={{color: '#fff', height: '200px', background: 
-                    'url(https://reactjs.org/logo-og.png) center / cover' }}>React Project #2</CardTitle>
+                    <CardTitle style={{color: '', height: '200px', background: 
+                    'url(http://i.piccy.info/i9/b217840b1c3055cf48a8eea5f49bb91c/1522426566/86402/1233504/react_form.jpg) center / cover' }}></CardTitle>
                     <CardText>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+                    Used: Javascript, ReactJs, Material UI, HTML/CSS
                     </CardText>
-                    <CardActions border>
-                        <Button colored>Github</Button> 
-                        <Button colored>Live Demo</Button> 
+                    <CardActions border style={{textAlign: 'center'}}>
+                        <Button href="https://github.com/andrey4ikk/react-form" rel="noopener noreferrer" target="_blank" colored>Github</Button> 
+                        <Button href="https://react-form-material.herokuapp.com/" rel="noopener noreferrer" target="_blank" colored>Live Demo</Button> 
                     </CardActions>
                 </Card>
 
                     <Card shadow={5} style={{minWidth: '450', margin: '25px'}}>
-                    <CardTitle style={{color: '#fff', height: '200px', background: 
-                    'url(https://reactjs.org/logo-og.png) center / cover' }}>React Project #3</CardTitle>
+                    <CardTitle style={{ color: '', height: '200px', background: 
+                    'url(https://reactjs.org/logo-og.png) center / cover' }}></CardTitle>
                     <CardText>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+                    Used: Javascript, ReactJs, HTML/CSS , Openweathermap
                     </CardText>
-                    <CardActions border>
-                        <Button colored style={{margin: '20px'}}>Github</Button> 
-                        <Button colored>Live Demo</Button> 
+                    <CardActions border style={{textAlign: 'center'}}>
+                        <Button href="https://github.com/andrey4ikk/reactjs-weather-app" rel="noopener noreferrer" target="_blank" colored>Github</Button> 
                     </CardActions>
                 </Card>
             
-                </div>
+                </div>   
                 
             )
-        } else if( this.state.activeTab === 1) {
+        }  else if (this.state.activeTab === 1) {
             return (
-                <div><h1>This is Angular</h1></div>
-            )
-        } else if (this.state.activeTab === 2) {
-            return (
-                <div><h1> This is Layout</h1></div>
+                <div className="projects-grid">
+
+                <Card shadow={5} style={{minWidth: '450', margin: '25px'}}>
+                <CardTitle style={{color: '', height: '200px', background: 
+                'url(http://i.piccy.info/i9/51c078f96546049bc2dd8d4caf2d168e/1522426182/58607/1233504/landing_mockup.jpg) center / cover' }}></CardTitle>
+                <CardText>
+                    Used: HTML/CSS/SASS, Javascript, jQuery
+                </CardText>
+                <CardActions borde style={{textAlign: 'center'}}>
+                    <Button href="https://github.com/andrey4ikk/landing-mockup" rel="noopener noreferrer" target="_blank" colored>Github</Button>  
+                </CardActions>
+            </Card>
+
+                <Card shadow={5} style={{minWidth: '450', margin: '25px'}}>
+                <CardTitle style={{color: '', height: '200px', background: 
+                'url(http://freebiesxpress.com/wp-content/uploads/2014/02/Treehouse-Home-Page-Main.jpg) center / cover' }}></CardTitle>
+                <CardText>
+                   Used: HTML/CSS/LESS, Javascript, jQuery
+                </CardText>
+                <CardActions border style={{textAlign: 'center'}}>
+                    <Button href="https://www.linkedin.com/in/andrey4ikk/" rel="noopener noreferrer" target="_blank" colored>Github</Button>  
+                </CardActions>
+            </Card>
+        
+            </div>   
+            
+                
             )
         }
   
@@ -70,8 +92,7 @@ class Projects extends Component {
         return(
             <div>
                 <Tabs activeTab={this.state.activeTab} onChange={(tabId) => this.setState({ activeTab: tabId })} ripple>
-                    <Tab>React</Tab>
-                    <Tab>Angular</Tab>
+                    <Tab>React app</Tab>
                     <Tab>Layout</Tab>
                 </Tabs>
                 <section className="projects-grid">

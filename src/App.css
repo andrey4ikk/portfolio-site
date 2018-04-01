@@ -19,7 +19,44 @@
 
 .projects-grid {
   display: flex;
-  padding: 10px;
+}
+
+.projects-grid Button colored {
+  background: #480048;
+}
+
+.resume-right-col {
+  background: #27221F;
+  color: white;
+
+}
+
+.button_pdf {
+  position: absolute;
+  left: 297px;
+  top: 337px;
+  width: 140px;
+  height: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 1;
+  cursor: pointer;
+  border: 2px solid red;
+  text-decoration: none;
+  border-radius: 3em;
+  border-color: grey;
+  color: grey;
+  background-image: -webkit-linear-gradient(top, transparent 0%, #4286f4);
+  background-size: 210%;
+  transition: 250ms ease-in-out, color 150ms ease-in-out;
+}
+.button_pdf:hover {
+  color: #fff;
+  background-position: 0 100%;
+}
+.button_pdf a {
+  margin: 0 100px 0 0;
 }
 
 .contact-body {
