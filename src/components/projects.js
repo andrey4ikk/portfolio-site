@@ -66,7 +66,8 @@ class Projects extends Component {
                     Used: HTML/CSS/SASS, Javascript, jQuery
                 </CardText>
                 <CardActions borde style={{textAlign: 'center'}}>
-                    <Button href="https://github.com/andrey4ikk/landing-mockup" rel="noopener noreferrer" target="_blank" colored>Github</Button>  
+                    <Button href="https://github.com/andrey4ikk/landing-mockup" rel="noopener noreferrer" target="_blank" colored>Github</Button> 
+                    <Button href="https://andrey4ikk.github.io/landing-page/" rel="noopener noreferrer" target="_blank" colored>Live Demo</Button> 
                 </CardActions>
             </Card>
 
@@ -77,7 +78,8 @@ class Projects extends Component {
                    Used: HTML/CSS/LESS, Javascript, jQuery
                 </CardText>
                 <CardActions border style={{textAlign: 'center'}}>
-                    <Button href="https://www.linkedin.com/in/andrey4ikk/" rel="noopener noreferrer" target="_blank" colored>Github</Button>  
+                    <Button href="https://www.linkedin.com/in/andrey4ikk/" rel="noopener noreferrer" target="_blank" colored>Github</Button> 
+                    <Button href="https://andrey4ikk.github.io/treehouse-mockup/" rel="noopener noreferrer" target="_blank" colored>Live Demo</Button> 
                 </CardActions>
             </Card>
         

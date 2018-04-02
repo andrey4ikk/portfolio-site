@@ -20,7 +20,7 @@ class Resume extends Component {
                     />
                     </div>
                     <h2 style={{paddingTop: '1em' }}>Andrey Duka</h2>
-                    <a className="button_pdf" download href="img/Andrey Duka(Front end developer).pdf" >Download resume</a>
+                    <a className="button_pdf" href="img/Andrey Duka(Front end developer).pdf"  download >Download resume</a>
                     <h4 style={{color: 'grey'}}>Front end developer</h4>
                     <hr style={{borderTop: '3px solid #833fb2'}} /> 
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
